@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* เเถบสีเทาด้านบน */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #9595a385;
+    padding: 15px 30px;
+    box-sizing: border-box; /* ป้องกันแถบเมนูทะลุขอบจอขวา */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.menu a {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.menu a:hover {
+    color: palevioletred;
+}

@@ -1,0 +1,252 @@
+
+/* ================= RESET CSS ================= */
+/* รีเซ็ตระยะขอบและกำหนดขนาดกล่อง */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+/* ตั้งค่าพื้นฐานของเว็บไซต์ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f9;
+    color: #172b4d;
+}
+
+
+/* ================= CONTAINER ================= */
+/* กล่องหลักที่ครอบเนื้อหาทั้งหมด */
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1500px;
+    margin: 30px auto 0;
+    margin-top: 80px; /* ขยับกรอบสีขาวลงมา */
+}
+
+/* ================= LEFT PROFILE ================= */
+/* กล่องโปรไฟล์ด้านซ้าย */
+.profile-card {
+    background-color: white;
+    width: 255px;
+    min-width: 255px;
+    padding: 25px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/* รูปโปรไฟล์ */
+.profile-image img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* ชื่อโปรไฟล์ */
+.profile-card h2 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+/* อีเมลใต้ชื่อ */
+.email {
+    color: #8795b5;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+
+/* ส่วนแนะนำตัว */
+.about {
+    margin-top: 48px;
+}
+
+
+/* หัวข้อ About */
+.about h3 {
+    color: #007bff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* ข้อความแนะนำตัว */
+.about p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* ================= RIGHT DETAILS ================= */
+/* กล่องรายละเอียดด้านขวา */
+.details-card {
+    background-color: white;
+    flex: 1;
+    padding: 22px 20px;
+    border-radius: 5px;
+}
+
+
+/* ================= ADDITIONAL WHITE BLOCK ================= */
+.extra-card {
+    background-color: white;
+    width: 255px;
+    min-width: 255px;
+    padding: 22px 20px;
+    border-radius: 5px;
+}
+
+.extra-card h3 {
+    color: #007bff;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.extra-card p {
+    font-size: 14px;
+    color: #52627a;
+    line-height: 1.6;
+}
+
+
+.extra-card h3 {
+  font-size: 24px; /* ขนาดหัวข้อ Additional Information */
+}
+
+.extra-card p.contact {
+  font-size: 20px; /* ขนาดข้อความ Contact */
+  color: black;
+}
+
+.extra-card p.ber {
+  font-size: 18px; /* ขนาดข้อความ Contact */
+  color: black;
+}
+
+.extra-card p.gmail {
+  font-size: 18px; /* ขนาดข้อความ Contact */
+  color: black;
+  display: block;
+}
+
+.extra-card a {
+  font-size: 20px; /* ขนาดลิงก์ instagram */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.extra-card a {
+  display: block; /* ทำให้ลิงก์ขึ้นบรรทัดใหม่แยกกัน */
+  margin-top: 8px; /* เว้นระยะห่างด้านบนเล็กน้อย (ปรับตัวเลขได้) */
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* หัวข้อ Personal Details และ Address */
+.details-card h3 {
+    color: #007bff;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+
+/* จัดข้อมูลเป็น 2 คอลัมน์ */
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+}
+
+
+/* ชื่อหัวข้อข้อมูล เช่น Full Name, Email */
+.detail label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+/* กล่องแสดงข้อความข้อมูล */
+.detail p {
+    font-size: 14px;
+    color: #52627a;
+    background-color: #f5f7fa;
+    padding: 10px 12px;
+    border-radius: 3px;
+}
+
+
+/* ระยะห่างของหัวข้อ Address */
+.address-title {
+    margin-top: 32px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+/* ปรับเว็บไซต์สำหรับหน้าจอมือถือ */
+@media (max-width: 700px) {
+
+    /* เปลี่ยนจากแนวนอนเป็นแนวตั้ง */
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    /* ให้กล่องโปรไฟล์เต็มความกว้าง */
+    .profile-card {
+        width: 100%;
+    }
+
+    .extra-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* เปลี่ยนข้อมูลจาก 2 คอลัมน์เป็น 1 คอลัมน์ */
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* เเถบสีเทาด้านบน */
+.Aboutnavbar {
+    display: flex;              /* ใช้ Flexbox */
+    justify-content: space-between; /* จัดให้ซ้าย-ขวา */
+    align-items: center;      /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    position: fixed; /* ตรึงไว้ด้านบน */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #565e4385;     /* สีพื้นหลัง */
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* ใส่เงา */
+}
+
+/* แก้ตรงส่วน hover เป็นแบบนี้ครับ */
+.Aboutnavbar .menu a:hover {
+    color: palevioletred;
+}
+
+
+.Aboutnavbar a {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-decoration: none; /* ตัดเส้นใต้ */
+    margin: 0 15px; /*ระหว่างอักษรเเละลิ้ง*/
+}
+
+
+.menu {   /* บรรทัด22,23 ปรับระยะhome abpout ... */
+    display:flex;
+    gap: 20px;
+    font-size: 20px;
+}
+

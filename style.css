@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.logo {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #9595a385;
+    padding: 15px 30px;
+    box-sizing: border-box; /* ป้องกันแถบเมนูทะลุขอบจอขวา */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.menu a {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.menu a:hover {
+    color: palevioletred;
+}
+
+
+
+body {
+    display: flex;  /*ใช้ flex เพื่อจัด layout */
+    justify-content: center; /*จัดเเนวนอนให้อยู่ตรงกลาง*/
+    align-items: center; /* จัดเเนวตั้งอยู่ตรงกลาง*/
+    background-color: lightgray;
+    margin: 0;
+}
+
+.conteir {
+    background-color: antiquewhite;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.container h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:palevioletred;
+}
+.name {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+}
+
+
+.shool {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+}
+
+
+.box {
+    background-color: white;
+    margin: 50px;
+    padding: 40px;
+    border-radius: 20px; /*ทำมุม*/
+    box-shadow: 0 4px 8px palevioletred; /* ใส่เงาให้กล่องดูมีมิติ */
+    margin-top: 80px; /* เว้นระจากเเถบ menu */
+}
+
+.photo {
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.box p{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.box p{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+

@@ -1,0 +1,38 @@
+.Aboutnavbar {
+    display: flex;              /* ใช้ Flexbox */
+    justify-content: space-between; /* จัดให้ซ้าย-ขวา */
+    align-items: center;      /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    position: fixed; /* ตรึงไว้ด้านบน */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #565e4385;     /* สีพื้นหลัง */
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* ใส่เงา */
+}
+
+.menu {   /* บรรทัด22,23 ปรับระยะhome abpout ... */
+    display:flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+
+
+
+.navbar {
+    display: flex;              /* ใช้ Flexbox */
+    justify-content: space-between; /* จัดให้ซ้าย-ขวา */
+    align-items: center;      /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    position: fixed; /* ตรึงไว้ด้านบน */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #565e4385;     /* สีพื้นหลัง */
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* ใส่เงา */
+}
+
+
